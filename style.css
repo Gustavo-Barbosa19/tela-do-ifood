@@ -1,0 +1,112 @@
+header{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    margin-bottom: 30px;
+}
+#icone-notificacao{
+    position: relative;
+    width: 60px;
+    text-align: center;
+    color: rgb(235, 1, 52);
+}
+#setinha{
+    color: rgb(235, 1, 52);
+    font-size: 0.5em;
+}
+#endereco{
+    display: flex;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#logradouro{
+    font-weight: bold;
+    margin-right: 5px;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+#badge{
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    color: #fff;
+    background-color:rgb(235, 1, 52) ;
+    border-radius: 6px;
+    width: 12px;
+    height: 12px;
+    font-size: 0.5em;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+#primeira-linha, #segunda-linha{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.card{
+    background-color: rgb(245,245,245);
+    flex: 1;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+}
+.card .texto{ /*pega os div com classe de texto dentro dos divs com classe card*/
+    font-weight: bold;
+}
+#primeira-linha .card{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+#segunda-linha .card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+#primeira-linha .texto, #primeira-linha .imagem{
+    flex: 1;
+}
+#primeira-linha .imagem{
+    text-align: right;
+}
+/* #primeira-linha img, #segunda-linha img{
+    width: 50%  ;
+} */
+#segunda-linha .texto{
+    height: 30px;
+}
+#segunda-linha .imagem{
+    flex: 1;
+}
+#banners{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    overflow-x: auto;
+    justify-content: space-between;
+    gap: 10px;
+}
+.banner img{
+    border-radius: 15px;
+}
+#pontos{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 5px;
+}
+.pontinhos{
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    background-color: #ccc;
+}
